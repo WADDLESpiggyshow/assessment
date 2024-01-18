@@ -1,0 +1,284 @@
+body{
+    background-color: rgb(255 255 161);
+    font-family:comic sans ms;
+    font-size:20px;
+    width:100%;
+    height: 100%;
+    margin:0px;
+    }
+a{
+    text-decoration:none;
+}
+/* navbar*/
+div.dropdown{
+        display: inline-block;
+        position: relative;
+    margin-left:5px;
+    margin-right:5px;
+    }
+div.content{
+        display: none;
+        position: absolute;     
+    }
+div.dropdown:hover div.content{
+        display: flex;
+        width:110px;
+       background-color: #00250099;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left:-5px;
+    border:2px ridge #00250099;
+    
+    }
+nav{
+    display:flex;
+    background-color:#00250099;
+    width:100%;
+    height:50px;
+    position:fixed;
+    border:2px ridge green;
+    z-index:1;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+   
+    }
+a.nav{
+    width:fit-container;
+}
+button.nav{
+    background-color:black;
+    color:white;
+    height:50px;
+    width:100%;
+    margin:0px;
+    font-family:comic sans ms;
+    border:2px ridge green;
+    
+    }
+button.nav:hover{
+    background-color:white;
+    color:black;
+    border-color:red
+    }
+button.nav.project{
+    background-color:black;
+    color:white;
+    height:50px;
+    width:100px;
+    margin:0px;
+    font-family:comic sans ms;
+    border:2px ridge green;
+   
+    }
+button.nav.project:hover{
+    background-color:white;
+    color:black;
+    border-color:red;
+   
+    }
+
+}
+/*page design*/
+h1{
+    text-align:center;
+}
+h2{
+    margin:5px;
+}
+p{
+    margin:5px;
+} 
+p.dec{
+    text-align:center;
+    font-size:12px;
+    color:gray
+}
+a{
+    margin:5px;
+}
+a.dec{
+    color:gray;
+    height:fit-container;
+}
+a.dec:hover{
+    color:lightgray;
+}
+h1{
+   text-align:center;
+    animation:title 3s linear;
+}
+@keyframes title{
+    0% {
+    rotate:0deg; scale:0;
+  }
+  25% {
+    rotate:3deg; scale:1;
+  }
+  50% {
+    rotate:0deg; scale:1.5;
+  }
+  75% {
+    rotate:-3deg;scale:1;
+  }
+  100% {
+    rotate:0deg;scale:1;
+  }
+}
+div.container{
+    display:flex;
+ flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+div.space{
+    height:50px;
+}
+/*images*/
+img.preview{
+    display:inline;
+    height:12.5%;
+    width:25%;
+    border:6px solid red;
+    margin:5px;
+    
+    }
+img.preview:hover{
+    height:25%;
+    width:89%;
+    z-index:11;
+    border:20px solid #00000075;
+    position:relative;
+}
+img#nohover:hover{
+    border:2px ridge white;
+    height:12.5%;
+    width:33%;
+    position:relative;
+    
+}
+img.head{
+    height:25%;
+    width:75%;
+    border:5px ridge #101010ff;
+    
+}
+
+img.download{
+    height:10%;
+    width:10%;
+}
+button.download{
+    background-color:limegreen;
+    border:2px solid black;
+    width:fit-container;
+
+   
+}
+button.download:hover{
+    background-color:white;
+    animation:clickme 1s linear infinite;
+}
+@keyframes clickme{
+    0%{rotate:0deg}
+    25%{rotate:2.5deg}
+    50%{rotate:0deg}
+    75%{rotate:-2.5deg}
+    100%{rotate:0deg}
+    }
+b.download{
+color:green
+}
+a.download{
+    width:45%;
+}
+/*wyrm only*/
+b.wyrm{
+    color:magenta
+}
+
+/*jim only*/
+b.jim{
+    color:cyan;
+    }
+video.instruction{
+    border: 2px ridge red;
+    height: 25%;
+    width:25%;
+    z-index:-1;
+    }
+
+
+/*pb only*/
+b.pb{
+    background: conic-gradient(at 50% 1%,salmon,#87fff1);
+    background-clip: text;
+    color:transparent;
+    z-index:1;
+}
+img.anvil{
+   display:none;
+    position:absolute;
+    opacity:0.75;
+    width:200px;
+    margin:5px;
+}
+b.craft{
+    position:relative;
+}
+b.craft:hover img.anvil{
+display:block
+}
+div#container2{
+    flex-direction:row-reverse;
+}
+/*rs onlu*/
+b.rs{
+    color:yellow;
+    }
+img#duck{
+    height:15%;
+    width:25%;
+}
+/*home only*/
+.minecrft{
+    width:10%;
+    height:10%;
+}
+/*tutorial only*/
+iframe.tutorial{
+    border: 6px ridge green;
+    margin:5px;
+}
+i.click{
+    position:absolute;
+    display:none;
+    font-size:12px;
+    color:010101ff;
+    margin:5px;
+    border:2px ridge #00000075;
+}
+/*tut & home*/
+a.op{
+    color:red;
+    position:relative;
+}
+a.op:hover{
+    color:pink;
+}
+a.op:hover i.click{
+   display:inline-block;
+    background:#00000075
+}
+a.op:active{
+    color:yellow;
+}
+a.op:visited{
+    color:white;
+}
