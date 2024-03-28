@@ -130,6 +130,7 @@ h1{
   }
 }
 div.container{
+    width:100%,
     display:flex;
  flex-direction: column;
     flex-wrap: wrap;
@@ -236,6 +237,7 @@ b.craft:hover img.anvil{
 display:block
 }
 div#container2{
+    width:100%,
     flex-direction:row-reverse;
 }
 /*rs onlu*/
