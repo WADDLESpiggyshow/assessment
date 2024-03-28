@@ -237,7 +237,7 @@ b.craft:hover img.anvil{
 display:block
 }
 div#container2{
-    width:100%,
+    width:100%;
     flex-direction:row-reverse;
 }
 /*rs onlu*/
